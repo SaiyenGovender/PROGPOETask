@@ -1,0 +1,74 @@
+﻿@model PROGPOETask.Models.UserAccount
+@{
+
+    Layout = "~/Views/_LayoutPage1.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+
+
+<meta name="viewport" content="width=device-width" />
+<title>Monthly</title>
+<!--  <td align="center">
+      <input type="number" required="" placeholder="deduction" />
+  </td>-->
+
+
+<body>
+    <center>
+        <form action="updateMonthly" method="post">
+            <div>
+                <h1>Enter monthly details</h1>
+
+            </div>
+            <pre>
+            <input name="gross" type="number" required=""  placeholder="Gross income" />
+
+                </pre>
+            <pre>
+            <input name="tax" type="number" required="" placeholder="Deductions"/>
+
+
+                </pre>
+            <pre>
+            <input name="groc" type="number" required="" placeholder="groceries"  />
+
+
+                </pre>
+            <pre>
+            <input name="water" type="number" required=""  placeholder="water"  />
+
+
+                </pre>
+            <pre>
+            <input name="travel" type="number" required="" placeholder="travels"  />
+
+
+                </pre>
+            <pre>
+            <input name="phones" type="number" required=""  placeholder="phones"  />
+
+
+                </pre>
+            <pre>
+            <input name="other" type="number" required="" ` placeholder="Other"  />
+
+
+
+
+                </pre>
+            <pre>
+            <input type="submit" value="Calculate and save monthly amount">
+
+
+
+</pre>
+
+
+        </form>
+    </center>
+
+</body>
+

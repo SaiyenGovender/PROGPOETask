@@ -1,0 +1,90 @@
+﻿@model PROGPOETask.Models.UserAccount
+@{
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width" />
+<title>Accomodations</title>
+<div class="header">
+    <h1>Accomodations page</h1>
+</div>
+<body>
+    <center>
+        <form action="updateBuyAccomodations" method="post">
+            <div>
+                <h1>Enter details for your current accomodation </h1>
+
+            </div>
+
+            <div>
+                <h1>Enter details of property bought</h1>
+
+            </div>
+            <pre>
+            <input name="propPrice" type="number" step="any" placeholder="PropPrice" />
+
+
+
+
+
+                </pre>
+            <pre>
+            <input name="accDep" type="number" placeholder="AccDep" />
+
+
+
+
+
+                </pre>
+            <pre>
+            <input name="accRate" type="number"  placeholder="AccInt" />
+
+
+
+
+
+                </pre>
+            <pre>
+            <input name="accMonths" type="number" placeholder="AccMonths" />
+
+
+
+
+       
+        </pre>
+            <pre>
+            <input type="submit" value="Calculate and save property details">
+
+
+
+            </pre>
+        </form>
+        <div>
+            <h1>Enter rent amount</h1>
+
+        </div>
+        <form action="updateRentAccomodations" method="post">
+            <pre>
+            <input name="rent" type="number" step="any" required="" placeholder="rent" />
+
+
+
+         </pre>
+            <pre>
+            <input type="submit" value="Calculate and save rent">
+
+
+
+        </pre>
+        </form>
+
+
+    </center>
+
+</body>
+<form action="MonthlyPage" method="post">
+    <input type="submit" value="back">
+</form>
+

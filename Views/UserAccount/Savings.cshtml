@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Savings";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+<div class="header">
+    <h1>Savings page</h1>
+</div>
+<body>
+    <center>
+        <form action="updateSavings" method="post">
+            <div>
+                <h1>Enter data to calculate savings </h1>
+
+            </div>
+            <pre>
+            <input name="savTotal" type="number" required="" placeholder="Savings goal"  />
+
+
+                </pre>
+            <pre>
+            <input name="savYears" type="number" required="" placeholder="Years"  />
+
+
+                </pre>
+            <pre>
+            <input name="savInt" type="number" required="" placeholder="interest"  />
+
+
+                </pre>
+            <pre>
+            <input type="submit" value="Calculate and save">
+             </pre>
+        </form>
+    </center>
+
+</body>
+<form action="MonthlyPage" method="post">
+    <input type="submit" value="back">
+</form>

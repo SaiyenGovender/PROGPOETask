@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "ViewAccount";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+    <div class="header">
+        <h1>View page</h1>
+    </div>
+<form action="MonthlyPage">
+    <div class="text-center">
+        <label>Monthlyincome</label>
+        <pre>
+        <label>Gross</label> 
+        <input type="number" value=@ViewData["Gross"] />
+
+</pre>
+        <pre>
+        <label>Tax</label> 
+        <input type="number" value=@ViewData["Tax"] />
+
+
+    </pre>
+        <pre>
+        <label>Groc</label> 
+        <input type="number" value=@ViewData["Groc"] />
+
+    </pre>
+        <pre>
+
+        <label>Water and lights</label> 
+        <input type="number" value=@ViewData["WaterLights"] />
+
+    </pre>
+
+        <pre>
+        <label>Travel</label> 
+        <input type="number" value=@ViewData["Travel"] />
+
+</pre>
+
+        <pre>
+        <label>Phone</label> 
+        <input type="number" value=@ViewData["Phone"] />
+
+</pre>
+
+        <pre>
+        <label>Other</label> 
+        <input type="number" value=@ViewData["Other"] />
+
+</pre>
+
+        <pre>
+        <label>Rent</label> 
+        <input type="number" value=@ViewData["Rent"] />
+
+        </pre>
+
+        <pre>
+        <label>Property price</label>
+        <input type="number" value=@ViewData["PropPrice"] />
+
+
+</pre>
+
+        <pre>
+        <label>AccDeposit</label> 
+        <input type="number" value=@ViewData["AccDeposit"] />
+
+</pre>
+
+        <pre>
+        <label>AccRate</label> 
+        <input type="number" value=@ViewData["AccRate"] />
+
+
+</pre>
+
+        <pre>
+        <label>Months</label>
+        <input type="number" value=@ViewData["Months"] />
+
+</pre>
+
+        <pre>
+        <label>ModelMake</label> 
+        <input type="number" value=@ViewData["ModelMake"] />
+
+
+</pre>
+
+        <pre>
+        <label>VehPrice</label> 
+        <input type="number" value=@ViewData["VehPrice"] />
+
+
+</pre>
+
+        <pre>
+        <label>VehDeposit</label> 
+        <input type="number" value=@ViewData["VehDeposit"] />
+
+
+</pre>
+
+        <pre>
+        <label>VehRate</label> 
+        <input type="number" value=@ViewData["VehRate"] />
+
+
+</pre>
+
+        <pre>
+        <label>VehIns</label> 
+        <input type="number" value=@ViewData["VehIns"] />
+
+
+</pre>
+        <pre>
+        <label>Saving goal</label>
+        <input type="number" value=@ViewData["SaveTotal"] />
+
+</pre>
+        <pre>
+        <label>Saving years</label>
+        <input type="number" value=@ViewData["SaveYears"] />
+
+</pre>
+        <pre>
+        <label>Saving interest</label>
+        <input type="number" value=@ViewData["SaveInt"] />
+
+</pre>
+           
+        <pre>
+        <label>IncomeTotal</label> 
+        <input type="number" value=@ViewData["IncomeTotal"] />
+
+
+
+</pre>
+        <pre>
+        <label>Monthyl saving </label> 
+        <input type="number" value=@ViewData["saveMonthly"] />
+
+
+
+</pre>
+        <pre>
+        <label>AccTotal</label> 
+        <input type="number" value=@ViewData["AccTotal"] />
+
+
+
+
+</pre>
+
+        <pre>
+        <label>VehTotal</label> 
+        <input type="number" value=@ViewData["VehTotal"] />
+
+
+</pre>
+
+        <pre>
+        <label>MonthTotal</label>
+        <input type="number" value=@ViewData["MonthTotal"] />
+
+
+
+
+
+
+
+</pre>
+
+
+    </div>
+</form>
+<form action="MonthlyPage" method="post">
+    <input type="submit" value="back">
+</form>

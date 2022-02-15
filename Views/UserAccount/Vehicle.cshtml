@@ -1,0 +1,62 @@
+﻿
+@{
+   
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Vehicle</title>
+    <div class="header">
+        <h1>Vehicle page</h1>
+    </div>
+    <body>
+        <center>
+            <form action="updateVehicle" method="post">
+                <div>
+                    <h1>Enter vehicle details if you are buying a vehicle or do not enter values in if your are not buying a vehicle</h1>
+
+                </div>
+                <pre>
+                <input name="model" type="text" required="" placeholder="Model make"  />
+
+
+
+                </pre>
+                <pre>
+                <input name="vehPrice" type="number" required="" placeholder="Vehicle price"  />
+
+
+
+                </pre>
+                <pre>
+                <input name="vehDep" type="number" required="" placeholder="Vehicle deposit"  />
+
+
+
+                </pre>
+                <pre>
+                <input name="vehRate" type="number" required="" placeholder="Vehicle rate" />
+
+
+
+                </pre>
+                <pre>
+                <input name="vehInsu" type="number" required="" placeholder="Vehicle insurance" />
+
+
+
+                </pre>
+                <pre>
+                <input type="submit" value="Calculate and save monthly amount">
+
+</pre>
+            </form>
+        </center>
+
+    </body>
+    <form action="MonthlyPage" method="post">
+        <input type="submit" value="back">
+    </form>

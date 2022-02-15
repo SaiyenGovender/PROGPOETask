@@ -1,0 +1,45 @@
+﻿@model PROGPOETask.Models.UserAccount
+@{
+
+    Layout = null;
+
+}
+
+
+<!DOCTYPE html>
+
+<body>
+    <div class="padding-all">
+        <div class="header">
+            <h1>Master  Login Form</h1>
+        </div>
+        <div class="design-w3l">
+            <div class="mail-form-agile">
+                <form action="Data" method="post">
+                    <pre>
+                    <input type="text" name="username" placeholder="Username" required="" />            <!-- calls values from model , might have to assign values to model strings before viewing them  -->
+                    </pre>
+                    <pre>
+                    <input type="password" name="password" class="padding" placeholder="Password " required="" />
+                    </pre>
+                    <pre>
+                    <input type="submit" value="MonthlyPage">
+                    </pre>
+                    <pre>
+                    <a href="https://localhost:44344/UserAccount/RegisterPage">Dont have an account</a>
+                    </pre>
+                </form>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        @if (TempData["Message"] != null)
+        {
+            <script>
+                alert("Error Username or password is incorrect");
+            </script>
+        }
+        <div class="footer">
+            <p>© 2017  Master  Login form. All Rights Reserved | Design by  <a href="https://w3layouts.com/">  w3layouts </a></p>
+        </div>
+    </div>
+</body>
